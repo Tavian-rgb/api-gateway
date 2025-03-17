@@ -1,0 +1,54 @@
+# Go语言特定的忽略项
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/vendor/
+/bin/
+/Godeps/
+
+# Go模块和构建相关
+go.work
+go.sum
+
+# 编译生成的二进制文件
+music-player
+main
+
+# 日志文件
+*.log
+logs/
+
+# 敏感文件
+.env
+*.env
+.env.*
+config.yaml
+config.json
+secrets.yaml
+secrets.json
+
+# 上传文件和媒体文件
+/uploads/
+/media/
+/storage/
+/tmp/
+*.mp3
+*.wav
+*.flac
+*.ogg
+*.m4a
+*.aac
+*.mp4
+
+# 缓存和临时文件
+.tmp/
+tmp/
+*.tmp
+*~
+*.bak
+*.swp
+*.orig
