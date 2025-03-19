@@ -13,6 +13,7 @@
 # Go模块和构建相关
 go.work
 go.sum
+go.mod
 
 # 编译生成的二进制文件
 music-player
@@ -26,8 +27,6 @@ logs/
 .env
 *.env
 .env.*
-config.yaml
-config.json
 secrets.yaml
 secrets.json
 

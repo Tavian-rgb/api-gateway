@@ -1,0 +1,18 @@
+port: 8080
+
+services:
+  - name: api-service
+    path: /api1
+    target: http://localhost:3000
+    strip_path: true
+    headers:
+      X-Proxy: "api-gateway"
+      X-Service: "api-service"
+
+  - name: web-service
+    path: /
+    target: http://localhost:8000
+    strip_path: false
+    headers:
+      X-Proxy: "api-gateway"
+      X-Service: "web-service" 
